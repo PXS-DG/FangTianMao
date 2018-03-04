@@ -1,0 +1,126 @@
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+a{
+    color:#999;
+}
+.redColor{
+    color: #C40000 !important;
+}
+nav.top{
+    background-color: #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom:1px solid  #e7e7e7;
+}
+nav.top span, nav.top a{
+    color: #999;
+    margin: 0px 10px 0px 10px;
+}
+nav.top a:hover{
+    color: #C40000;
+    text-decoration: none;
+}
+table{
+    font-size: 12px;
+    font-family: Arial;
+}
+a{
+    color:#999;
+}
+a:hover{
+    text-decoration:none;
+    color: #C40000;
+}
+div.simpleLogo{
+    padding: 32px 0px;
+}
+img.loginBackgroundImg{
+    display: block;
+    margin: 0px auto;
+}
+div.loginSmallDiv{
+    background-color: white;
+    position: absolute;
+    right: 80px;
+    top: 180px;
+    width: 350px;
+    height: 400px;
+    padding: 60px 25px 80px 25px;
+}
+div.login_acount_text{
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.loginInput{
+    border: 1px solid #CBCBCB;
+    margin: 20px 0px;
+}
+div.loginInput span.loginInputIcon{
+    margin: 0px;
+    background-color: #CBCBCB;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+}
+span.loginInputIcon span.glyphicon{
+    font-size: 22px;
+    position: relative;
+    left: 9px;
+    top: 9px;
+    color: #606060;
+}
+div.loginInput input{
+    display: inline-block;
+    border: 0px solid transparent;
+    width: 244px;
+    height: 30px;
+    position: relative;
+    left: 6px;
+    top: 6px;
+}
+button.redButton{
+    color: white;
+    background-color: #C40000;
+    font-size: 14px;
+    font-weight: bold;
+}
+div.footer{
+    margin: 0px 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+}
+div.copyright{
+    background-color: black;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #C40000;
+}
+div.copyright span.slash{
+    color: white;
+}
+div.footer div.copyright div.white_link a{
+    color: white;
+    padding: 0px 5px;
+}
+div.footer div.copyright div.white_link{
+    padding: 10px 0px;
+    margin-left: 10px;
+}
+div.license{
+    margin-left: 10px;
+    padding-bottom: 30px;
+}
+div.license span{
+    color: #A4A4A4;
+}
+div.license div.copyRightYear{
+    margin: 10px 0px;
+    color: #686868;
+}
+img.cateye{
+    margin-left: 20px;
+}
