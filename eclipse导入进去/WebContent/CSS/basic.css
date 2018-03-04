@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+body,h1,ul,h2,h3,ol,p figure {
+	margin: 0;
+	padding: 0;
+}
+ul,ol { 
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+}
+.none {
+	display: none;
+}
+
+#header {
+	 width:100%;
+	 height: 70px;
+	 background-color: #333;
+	 min-width: 1263px;
+	 /*阴影的设置*/
+	 box-shadow: 5px 10px 30px rgba(0,0,0,0.9);
+	 /*因为在search处设置了相对点，所以在这里也得设置层次更高的相对点*/
+	 position: relative;
+	 z-index: 9999;
+
+}
+
+#header .center {
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#header .logo {
+	width: 250px;
+	height: 70px;
+	background-image: url(../img/logo.png );
+    text-indent: -680px;
+    float: left;
+}
+#header .link {
+    height: 70px;
+    width: 750px;
+    line-height: 70px;
+    color: #eee;
+    float: right;
+}
+#header .link li {
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+#header .link a {
+	color: #eee;
+	display: block;
+}
+#header .link a:hover,
+#header .active a {
+	background-color: #000;
+	
+}
+
+.articleA  {
+	/*background-color: #a6ffff;*/
+	max-width: 1200px;
+	/*margin: -10px 0 0px 350px;*/
+	margin: 0 auto;
+}
+.articleA section {
+	margin: 40px auto;
+}
+.articleA  h2 {
+	color: #007979;
+	font-size:45px;
+}	
+.articleA  li {
+   font-size: 20px;
+   text-align: left;
+   margin: 10px auto;
+   display: inline-block;
+   width: 170px;
+   height: 40px;
+   cursor: pointer;
+}
+.articleA  li a {
+	 color: #01B468;
+}
+.articleA  .famous li {
+   color: #01B468;
+   font-size: 20px;
+   text-align: center;
+   margin: 10px auto;
+   display: inline-block;
+   width: 160px;
+   height: 30px;
+   cursor: pointer;
+}
+.articleA  .other li {
+	display: inline-block;
+	color: #01B468;
+	width: 110px;
+	height: 30px;
+	margin: 10px 25px 10px 30px;
+	text-align: center;
+
+}
+
+.articleA a:hover,.articleA .famous li:hover ,.articleA .other li:hover {
+	color: #adadad;
+	text-decoration: underline;
+}
+
+
+#footer {
+	height: 360px;
+	width: 100%;
+    background-color: #222; 
+	/*清理所有浮动margin等效果失去 */
+	clear: both;
+/*可选用相对定位方法解决*/
+     position: relative;
+     top: 19px;   
+     min-width: 1263px;
+
+}
+#footer .top {
+	width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+/*版权区CSS*/
+#footer .buttom {
+	height: 80px;
+	background-color: #000;
+	line-height: 80px;
+	text-align: center;
+	color: #777;
+	border:1px solid #444;
+}
+#footer .block {
+	width: 400px;
+	height: 280px;
+	display: inline-block;
+	text-align: left;
+	color: #ccc;
+	/*强制居顶*/
+	vertical-align: top;
+}
+#footer h2 {
+	padding: 20px 0 0 0;
+	font-weight: normal;
+	font-size: 24px;
+}
+#footer hr {
+	width: 99%;
+	border:1px dashed #333;
+	/*background-color: green;*/
+}
+#footer ul {
+	font-size: 18px;
+	color: #777;
+	text-align:20px;
+	line-height:2;
+	/*background-color: red;*/
+}
+#footer a {
+	color: #777;
+}
+
+fieldset {
+	margin: 70px auto;
+	background:linear-gradient(to top right,aqua,navy);
+	/*background:radial-gradient(300px 150px,aqua,navy);*/
+	width: 600px;
+	height: 300px;
+	box-shadow: 5px 3px 9px 5px #999; 
+}
+.in {
+	width: 200px;
+	height: 30px;
+}
+.row {
+	font-size: 25px;
+	text-align: center;
+	margin: 35px auto;
+	height: 30px；
+}
+fieldset h3 {
+	font-size: 32px;
+	margin: 12px 220px;
+	color: #0dd;
+    text-shadow: 2px 2px white,6px 6px rgb(200,100,100) ;
+}
+
+.submit {
+	background-color: #d4d4d4;
+	font-size: 20px;
+	margin: -80px 250px;
+	cursor: pointer;
+}
+.submat {
+	background-color: #d4d4d4;
+	font-size: 20px;
+	margin: 10px -230px;
+	cursor: pointer;
+}
+input[type="text"]:invalid {
+	color: red;
+}
+input[type="text"]:valid {
+	color: black;
+}

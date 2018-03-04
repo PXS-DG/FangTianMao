@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>留苏网</title>
+  <link rel="stylesheet"  href="CSS/column.css">
+  <link rel="stylesheet"  href="CSS/basic.css">
+  <link href="img/co.ico" rel="icon" />
+</head>
+<body>
+
+<header id="header">
+   <div class="center">
+       <h1 class="logo">留苏网</h1>  
+       <nav class="link"> 
+          <h2 class="none">网站导航</h2>
+          <ul>
+             <li><a href="index.html">首页</a></li>
+             <li><a href="information.html">热门旅游</a></li>
+             <li><a href="ticket.html">票务查询</a></li>
+             <li><a href="scenery.html">你游你说</a></li>
+             <li><a href="all_address.html">旅游点击</a></li>
+             <li class="active"><a href="myinformation.html">我的旅行</a></li>
+           </ul>
+        </nav> 
+   </div>
+</header>
+
+<form method="post" action="updateUser">
+<fieldset style="height:450px;">
+<h3>更新用户</h3>
+<p class="row">
+   <label for="number">ID:</label>
+   <input type="number" id="number" name="number" class="in" required  size="8"  autofocus />
+</p>
+<p class="row">
+   <label for="name">姓名：</label>
+   <input type="text" id="name" name="name" class="in" required placeholder="请输入您的名字" size="8" pattern="^[\u4e00-\u9fa5]{2,12}$" autofocus />
+</p>
+<p class="row">
+   <label for="password">密码：</label>
+   <input type="password" id="password" name="password" class="in" required placeholder="请输入6位以上的密码" pattern="^[a-zA-Z0-9]\w{5,16}$" autofocus />
+</p>
+<p class="row">
+   <label for="telephone">联系电话：</label>
+   <input type="number" placeholder="请输入电话号码" id="telephone" name="telephone" class="in" required  />
+</p>
+<input style="margin: -200px 300px;" class="submit" type="submit" value="更新" />
+</fieldset>
+</form>
+
+<form method="post" action="updateScenery">
+<fieldset style="height:450px;">
+<h3>更新旅行项目</h3>
+<p class="row">
+   <label for="name">姓名：</label>
+   <input type="text" id="name" name="name" class="in" required placeholder="请输入地点" size="8" pattern="^[\u4e00-\u9fa5]{2,12}$" autofocus />
+</p>
+<p class="row">
+   <label for="time">时间：</label>
+   <input type="text" placeholder="请输入时间" id="time" name="time" class="in" required  />
+</p>
+<p class="row">
+   <label for="people">人数：</label>
+   <input type="number" placeholder="请输入人数" id="people" name="people" class="in" required  />
+</p>
+<p class="row">
+   <label for="company">公司名称：</label>
+   <input type="text" placeholder="请输入公司名称" id="company" name="company" class="in" required  />
+</p>
+<input style="margin: -200px 300px;" class="submit" type="submit" value="更新" />
+</fieldset>
+</form>
+
+<form method="post" action="updateTicket">
+<fieldset style="height:450px;">
+<h3>更新机票</h3>
+<p class="row">
+   <label for="city">城市：</label>
+   <input type="text" id="city" name="city" class="in" required placeholder="请输入城市" size="8" pattern="^[\u4e00-\u9fa5]{2,12}$" autofocus />
+</p>
+<p class="row">
+   <label for="time">时间：</label>
+   <input type="text" placeholder="请输入时间" id="time" name="time" class="in" required  />
+</p>
+<p class="row">
+   <label for="price">价格：</label>
+   <input type="number" placeholder="请输入价格" id="price" name="price" class="in" required  />
+</p>
+<p class="row">
+   <label for="company">公司名称：</label>
+   <input type="text" placeholder="请输入公司名称" id="company" name="company" class="in" required  />
+</p>
+<input style="margin: -200px 300px;" class="submit" type="submit" value="更新" />
+</fieldset>
+</form>
+
+</body>
+</html>
